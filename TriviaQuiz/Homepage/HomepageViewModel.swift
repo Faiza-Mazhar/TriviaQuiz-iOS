@@ -11,13 +11,13 @@ class HomepageViewModel: Identifiable, ObservableObject {
 
     let id = UUID()
 
-    @Published private (set) var questions: [Question] = []
+    @Published private (set) var questions: [QuestionDefinition] = []
 
     init() {
-        NetworkService().fetchQuestions { result in
+        NetworkService().fetchData(url: "https://opentdb.com/api_category.php") { result in
             switch result {
-            case .success(let json):
-                print(json)
+            case .success(let data):
+                JSONService().getJson(data: data, of: Categories.self)
             case .failure(let error):
                 print(error)
             }

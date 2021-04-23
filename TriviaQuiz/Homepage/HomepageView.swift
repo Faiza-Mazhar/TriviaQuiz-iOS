@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomepageView: View {
 
     @StateObject var viewModel = HomepageViewModel()
 
@@ -18,8 +18,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomepageView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomepageView()
     }
 }
