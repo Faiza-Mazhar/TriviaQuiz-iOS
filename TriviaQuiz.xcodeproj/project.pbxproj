@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF31EF0B2632C9B600B69B3A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D50026316E4000EC39DA /* NetworkService.swift */; };
+		BF31EF0F2632C9B800B69B3A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D50026316E4000EC39DA /* NetworkService.swift */; };
+		BF31EF182632CCF400B69B3A /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31EF172632CCF400B69B3A /* HomepageViewModel.swift */; };
 		BFC5D4D126316D2F00EC39DA /* TriviaQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D4D026316D2F00EC39DA /* TriviaQuizApp.swift */; };
 		BFC5D4D326316D2F00EC39DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D4D226316D2F00EC39DA /* ContentView.swift */; };
 		BFC5D4D526316D3200EC39DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC5D4D426316D3200EC39DA /* Assets.xcassets */; };
 		BFC5D4D826316D3200EC39DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC5D4D726316D3200EC39DA /* Preview Assets.xcassets */; };
 		BFC5D4E326316D3200EC39DA /* TriviaQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D4E226316D3200EC39DA /* TriviaQuizTests.swift */; };
 		BFC5D4EE26316D3200EC39DA /* TriviaQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D4ED26316D3200EC39DA /* TriviaQuizUITests.swift */; };
+		BFC5D50A26316E9300EC39DA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D50926316E9300EC39DA /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF31EF172632CCF400B69B3A /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
 		BFC5D4CD26316D2F00EC39DA /* TriviaQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFC5D4D026316D2F00EC39DA /* TriviaQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuizApp.swift; sourceTree = "<group>"; };
+		BFC5D4D026316D2F00EC39DA /* TriviaQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuizApp.swift; sourceTree = "<group>"; usesTabs = 0; };
 		BFC5D4D226316D2F00EC39DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFC5D4D426316D3200EC39DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC5D4D726316D3200EC39DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +50,8 @@
 		BFC5D4E926316D3200EC39DA /* TriviaQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC5D4ED26316D3200EC39DA /* TriviaQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuizUITests.swift; sourceTree = "<group>"; };
 		BFC5D4EF26316D3200EC39DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC5D50026316E4000EC39DA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BFC5D50926316E9300EC39DA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +79,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF31EF162632CCCB00B69B3A /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5D4D226316D2F00EC39DA /* ContentView.swift */,
+				BF31EF172632CCF400B69B3A /* HomepageViewModel.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
 		BFC5D4C426316D2F00EC39DA = {
 			isa = PBXGroup;
 			children = (
+				BFC5D4FE26316E1D00EC39DA /* Services */,
 				BFC5D4CF26316D2F00EC39DA /* TriviaQuiz */,
 				BFC5D4E126316D3200EC39DA /* TriviaQuizTests */,
 				BFC5D4EC26316D3200EC39DA /* TriviaQuizUITests */,
@@ -95,8 +112,8 @@
 		BFC5D4CF26316D2F00EC39DA /* TriviaQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				BF31EF162632CCCB00B69B3A /* Homepage */,
 				BFC5D4D026316D2F00EC39DA /* TriviaQuizApp.swift */,
-				BFC5D4D226316D2F00EC39DA /* ContentView.swift */,
 				BFC5D4D426316D3200EC39DA /* Assets.xcassets */,
 				BFC5D4D926316D3200EC39DA /* Info.plist */,
 				BFC5D4D626316D3200EC39DA /* Preview Content */,
@@ -115,6 +132,7 @@
 		BFC5D4E126316D3200EC39DA /* TriviaQuizTests */ = {
 			isa = PBXGroup;
 			children = (
+				BFC5D50826316E7400EC39DA /* NetworkService */,
 				BFC5D4E226316D3200EC39DA /* TriviaQuizTests.swift */,
 				BFC5D4E426316D3200EC39DA /* Info.plist */,
 			);
@@ -128,6 +146,30 @@
 				BFC5D4EF26316D3200EC39DA /* Info.plist */,
 			);
 			path = TriviaQuizUITests;
+			sourceTree = "<group>";
+		};
+		BFC5D4FE26316E1D00EC39DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5D4FF26316E2700EC39DA /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BFC5D4FF26316E2700EC39DA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5D50026316E4000EC39DA /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		BFC5D50826316E7400EC39DA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5D50926316E9300EC39DA /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF31EF182632CCF400B69B3A /* HomepageViewModel.swift in Sources */,
 				BFC5D4D326316D2F00EC39DA /* ContentView.swift in Sources */,
+				BF31EF0B2632C9B600B69B3A /* NetworkService.swift in Sources */,
 				BFC5D4D126316D2F00EC39DA /* TriviaQuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC5D50A26316E9300EC39DA /* NetworkService.swift in Sources */,
+				BF31EF0F2632C9B800B69B3A /* NetworkService.swift in Sources */,
 				BFC5D4E326316D3200EC39DA /* TriviaQuizTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
