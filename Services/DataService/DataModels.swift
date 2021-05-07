@@ -35,7 +35,7 @@ struct Categories: Codable {
 struct QuestionMetadata {
     let category, type, difficulty, question: String
     let correctAnswer: String
-    let incorrectAnswer: [String]
+    let answers: [String]
 }
 
 // MARK: CategoriesMetadata

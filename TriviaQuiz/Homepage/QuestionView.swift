@@ -8,32 +8,48 @@
 import SwiftUI
 
 struct QuestionView: View {
-    var questionDefinition: QuestionDefinition
+    var questionMetadata: QuestionMetadata
+    @State var selectedAnswer: String
+
     var body: some View {
         VStack {
             HStack{
-                Text(questionDefinition.category)
+                Text(questionMetadata.category)
                 Spacer()
-                Text(questionDefinition.type)
+                Text(questionMetadata.type)
             }.padding()
 
             HStack {
                 VStack {
-                    Text(questionDefinition.question)
-                    
+                    Text(questionMetadata.question)
+
+                    Picker("Please choose an answer", selection: $selectedAnswer) {
+                        ForEach(questionMetadata.answers, id: \.self) {
+                            Text($0)
+                        }
+
+                        Text("You selected: \(selectedAnswer)")
+//                        Text("Right Answer: \(questionMetadata.correctAnswer)")
+                    }
                 }
 
             }
         }
-
+        Spacer()
 
     }
 }
 
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        let questionDefinition = QuestionDefinition(
-            category: "Category", type: "Type", difficulty: "Difficulty", question: "Hows the SwiftUI going?", correct_answer: "Good", incorrect_answers: ["Not bad", "Alright", "Lets See"])
-        QuestionView(questionDefinition: questionDefinition)
+        let questionMetadata = QuestionMetadata(
+            category: "Category",
+            type: "Type",
+            difficulty: "Difficulty",
+            question: "Hows the SwiftUI going?",
+            correctAnswer: "Good",
+            answers: ["Not bad", "Good", "Alright", "Lets See"])
+        QuestionView(questionMetadata: questionMetadata,
+                     selectedAnswer: questionMetadata.answers[0])
     }
 }

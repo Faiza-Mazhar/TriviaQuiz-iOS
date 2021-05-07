@@ -11,12 +11,12 @@ func tranformQuestionsDefinitionToQuestionMetadata(questionsDefinition: Question
     for question in questionsDefinition.results {
         questionMetadata.append(
             QuestionMetadata(
-                category: question.category,
-                type: question.type,
-                difficulty: question.difficulty,
+                category: question.category.uppercased(),
+                type: question.type.uppercased(),
+                difficulty: question.difficulty.uppercased(),
                 question: question.question,
                 correctAnswer: question.correct_answer,
-                incorrectAnswer: shuffleAnswers(correctAnswer: question.correct_answer, wrongAnswers: question.incorrect_answers))
+                answers: shuffleAnswers(correctAnswer: question.correct_answer, wrongAnswers: question.incorrect_answers))
         )
     }
     

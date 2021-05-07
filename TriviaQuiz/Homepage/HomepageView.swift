@@ -10,15 +10,14 @@ import SwiftUI
 struct HomepageView: View {
 
     @ObservedObject var viewModel = HomepageViewModel()
-
+    @State private var currentIndex = 0
 
     var body: some View {
-
-        if((viewModel.questions) == nil) {
-            LoadingView()
-        } else {
-            Text("Lets show Question View")
+        guard let question = viewModel.questions?[currentIndex] else { return AnyView(LoadingView())
         }
+
+        return AnyView(
+        QuestionView(questionMetadata: question, selectedAnswer: "String"))
     }
 }
 
