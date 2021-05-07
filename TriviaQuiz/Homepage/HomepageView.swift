@@ -9,12 +9,16 @@ import SwiftUI
 
 struct HomepageView: View {
 
-    @StateObject var viewModel = HomepageViewModel()
+    @ObservedObject var viewModel = HomepageViewModel()
+
 
     var body: some View {
 
-        Text("Hello, world!")
-            .padding()
+        if((viewModel.questions) == nil) {
+            LoadingView()
+        } else {
+            Text("Lets show Question View")
+        }
     }
 }
 

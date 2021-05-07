@@ -11,18 +11,37 @@ class HomepageViewModel: Identifiable, ObservableObject {
 
     let id = UUID()
 
-    @Published private (set) var questions: [QuestionDefinition] = []
+    @Published var questions: [QuestionMetadata]?
+
 
     init() {
-        NetworkService().fetchData(url: "https://opentdb.com/api_category.php") { result in
-            switch result {
-            case .success(let data):
-                JSONService().getJson(data: data, of: Categories.self)
-            case .failure(let error):
-                print(error)
-            }
-        }
+        loadData()
     }
+
+    func loadData() {
+
+            NetworkService().fetchData(url: "https://opentdb.com/api.php?amount=10&type=multiple") { result in
+                switch result {
+                case .success(let data):
+                    UI {
+                        let questionsDefinition =  JSONService().getJson(data: data, of: QuestionsDefinition.self)
+                        self.questions = tranformQuestionsDefinitionToQuestionMetadata(questionsDefinition: questionsDefinition!)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+
+    }
+
+}
+
+func BG(_ block: @escaping ()->Void) {
+    DispatchQueue.global(qos: .default).async(execute: block)
+}
+
+func UI(_ block: @escaping ()->Void) {
+    DispatchQueue.main.async(execute: block)
 }
 
 

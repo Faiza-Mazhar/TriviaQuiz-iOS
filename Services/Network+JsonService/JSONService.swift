@@ -9,14 +9,11 @@ import Foundation
 
 class JSONService {
 
-    func getJson<T: Codable >(data: Data, of type: T.Type ) {
+    func getJson<T: Codable >(data: Data, of type: T.Type ) -> T? {
         do {
-            let categories = try JSONDecoder().decode(T.self, from: data)
-            print(categories)
-
-
-        } catch let serializationError {
-
+            return try JSONDecoder().decode(T.self, from: data)
+        } catch {
+            return nil
         }
     }
 }
