@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF03B23C26453C9800F2BD77 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03B23B26453C9800F2BD77 /* LoadingView.swift */; };
 		BF03B23E26453D9200F2BD77 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03B23D26453D9200F2BD77 /* QuestionView.swift */; };
 		BF31EF0B2632C9B600B69B3A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D50026316E4000EC39DA /* NetworkService.swift */; };
 		BF31EF0F2632C9B800B69B3A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5D50026316E4000EC39DA /* NetworkService.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF03B23B26453C9800F2BD77 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		BF03B23D26453D9200F2BD77 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		BF31EF172632CCF400B69B3A /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
 		BF31EF232632E6E900B69B3A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			children = (
 				BFC5D4D226316D2F00EC39DA /* HomepageView.swift */,
 				BF31EF172632CCF400B69B3A /* HomepageViewModel.swift */,
-				BF03B23B26453C9800F2BD77 /* LoadingView.swift */,
 				BF03B23D26453D9200F2BD77 /* QuestionView.swift */,
 			);
 			path = Homepage;
@@ -329,7 +326,6 @@
 				BF31EF0B2632C9B600B69B3A /* NetworkService.swift in Sources */,
 				BF31EF2C2632E7B100B69B3A /* DataModels.swift in Sources */,
 				BFC5D4D126316D2F00EC39DA /* TriviaQuizApp.swift in Sources */,
-				BF03B23C26453C9800F2BD77 /* LoadingView.swift in Sources */,
 				BF31EF242632E6E900B69B3A /* DataService.swift in Sources */,
 				BF03B23E26453D9200F2BD77 /* QuestionView.swift in Sources */,
 				BF31EF342632F56000B69B3A /* JSONService.swift in Sources */,

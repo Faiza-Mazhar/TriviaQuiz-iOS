@@ -11,6 +11,9 @@ struct QuestionView: View {
     var questionMetadata: QuestionMetadata
     @State var selectedAnswer: String
     @State private var submit = false
+    @State private var score = 0
+
+    var nextQuestionOnClickListerner: ((Int) -> Void)
 
     var body: some View {
         VStack {
@@ -31,18 +34,31 @@ struct QuestionView: View {
                     }
 
                     if submit {
-                        Text("You choose: \(selectedAnswer)")
-                        Text("Right answer is: \(questionMetadata.correctAnswer)")
-
-                    } else {
-                        Text("You choose \(selectedAnswer)")
+                        Text("You choose: \(selectedAnswer)").padding()
+                        Text("Right answer is: \(questionMetadata.correctAnswer)").padding()
+                        Text("Score is: \(score)").padding()
                     }
                 }
             }.padding()
 
             Button("Submit") {
                 submit.toggle()
+                if(selectedAnswer == questionMetadata.correctAnswer) {
+                    score = 1
+                } else {
+                    score = 0
+                }
 
+
+            }.contentShape(Rectangle()).padding()
+
+            Button("Next") {
+
+                self.selectedAnswer = ""
+                submit.toggle()
+
+                nextQuestionOnClickListerner(self.score)
+                
             }.contentShape(Rectangle()).padding()
 
         }
@@ -61,6 +77,8 @@ struct QuestionView_Previews: PreviewProvider {
             correctAnswer: "Good",
             answers: ["Not bad", "Good", "Alright", "Lets See"])
         QuestionView(questionMetadata: questionMetadata,
-                     selectedAnswer: questionMetadata.answers[0])
+                     selectedAnswer: questionMetadata.answers[0]){ _ in
+
+        }
     }
 }

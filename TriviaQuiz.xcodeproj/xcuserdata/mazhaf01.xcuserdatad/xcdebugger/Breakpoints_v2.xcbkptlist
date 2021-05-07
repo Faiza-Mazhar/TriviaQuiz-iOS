@@ -3,4 +3,130 @@
    uuid = "10C6BFE7-8C82-4890-9439-E5A3AE32B2ED"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TriviaQuiz/Homepage/QuestionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "QuestionView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - 3b005e392cee712a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of TriviaQuiz.QuestionView.selectedAnswer : Swift.String"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/TriviaQuiz/Homepage/QuestionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - 857f570fac87c07c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TriviaQuiz.QuestionView.selectedAnswer.getter : Swift.String"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/TriviaQuiz/Homepage/QuestionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "198">
+               </Location>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - aa1de52597aed070"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TriviaQuiz.QuestionView.selectedAnswer.setter : Swift.String"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/TriviaQuiz/Homepage/QuestionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "207">
+               </Location>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - b3f3c4cf837cd9a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TriviaQuiz.QuestionView.selectedAnswer.modify : Swift.String"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - 332fba00265afc70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TriviaQuiz.QuestionView.selectedAnswer.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/TriviaQuiz/Homepage/QuestionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "0AE3ECCB-87DA-4C78-8BA3-B215DBE1DFB6 - af8aeb207b0cbdb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TriviaQuiz.QuestionView.$selectedAnswer.getter : SwiftUI.Binding&lt;Swift.String&gt;"
+                  moduleName = "TriviaQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mazhaf01/Graduate%20Training%20Scheme/Rottaion%204%20-%20News%20App%20/TriviaQuiz/TriviaQuiz/Homepage/QuestionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "229">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC454F22-E6BB-4A6B-BC87-2ECC1EDBD01B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TriviaQuiz/Homepage/HomepageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
