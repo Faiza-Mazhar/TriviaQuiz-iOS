@@ -10,6 +10,7 @@ import SwiftUI
 struct QuestionView: View {
     var questionMetadata: QuestionMetadata
     @State var selectedAnswer: String
+    @State private var submit = false
 
     var body: some View {
         VStack {
@@ -27,13 +28,23 @@ struct QuestionView: View {
                         ForEach(questionMetadata.answers, id: \.self) {
                             Text($0)
                         }
+                    }
 
-                        Text("You selected: \(selectedAnswer)")
-//                        Text("Right Answer: \(questionMetadata.correctAnswer)")
+                    if submit {
+                        Text("You choose: \(selectedAnswer)")
+                        Text("Right answer is: \(questionMetadata.correctAnswer)")
+
+                    } else {
+                        Text("You choose \(selectedAnswer)")
                     }
                 }
+            }.padding()
 
-            }
+            Button("Submit") {
+                submit.toggle()
+
+            }.contentShape(Rectangle()).padding()
+
         }
         Spacer()
 
